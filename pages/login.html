@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div id="app" class="p-4">
+      <h1 class="text-2xl font-bold mb-4">Login</h1>
+      <input
+        type="text"
+        id="login-username"
+        placeholder="Username"
+        class="mb-2 p-2 border border-gray-300 rounded" />
+      <input
+        type="password"
+        id="login-password"
+        placeholder="Password"
+        class="mb-2 p-2 border border-gray-300 rounded" />
+      <button id="loginBtn" class="bg-blue-500 text-white px-4 py-2 rounded">
+        Login
+      </button>
+      <p class="mt-2">
+        Don't have an account?
+        <a href="signup.html" class="text-blue-500">Sign Up</a>
+      </p>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div id="app" class="p-4">
+      <input
+        type="text"
+        id="title"
+        placeholder="Title"
+        class="mb-2 p-2 border border-gray-300 rounded" />
+      <textarea
+        id="note"
+        placeholder="Note"
+        class="mb-2 p-2 border border-gray-300 rounded"></textarea>
+      <input
+        type="text"
+        id="category"
+        placeholder="Category"
+        class="mb-2 p-2 border border-gray-300 rounded" />
+      <input type="hidden" id="cardId" />
+      <button
+        id="updateCardBtn"
+        class="bg-blue-500 text-white px-4 py-2 rounded">
+        Update Card
+      </button>
+    </div>
+
+    <script src="components/card.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

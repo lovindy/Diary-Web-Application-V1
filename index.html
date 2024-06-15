@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diary Entries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="p-4">
+      <div id="cardsContainer" class="p-4"></div>
+      <button
+        onclick="navigateTo('pages/create.html')"
+        class="bg-green-500 text-white px-4 py-2 rounded">
+        Add New Card
+      </button>
+    </div>
+
+    <script src="components/card.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
