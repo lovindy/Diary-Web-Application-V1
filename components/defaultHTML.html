@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Card</title>
+    <title>Dynamic Button</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../html/nav.css" />
   </head>
   <body>
-    <div id="app" class="p-4">
+    <div id="app" class="p-4 flex flex-col items-start justify-start">
       <input
         type="text"
         id="title"
@@ -26,16 +26,12 @@
         placeholder="Category"
         class="mb-2 p-2 border border-gray-300 rounded"
       />
-      <input type="hidden" id="cardId" />
-      <button
-        id="updateCardBtn"
-        class="bg-blue-500 text-white px-4 py-2 rounded"
-      >
-        Update Card
+      <button id="addCardBtn" class="bg-green-500 text-white px-4 py-2 rounded">
+        Add Card
       </button>
     </div>
+    <div id="cardsContainer" class="p-4"></div>
 
-    <script src="../components/card.js"></script>
-    <script src="../script.js"></script>
+    <script src="defaultCard.js"></script>
   </body>
 </html>
