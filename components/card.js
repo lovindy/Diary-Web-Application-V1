@@ -64,6 +64,7 @@ function saveCardToLocalStorage(id, title, note, date, category) {
   localStorage.setItem("cards", JSON.stringify(cards));
 }
 
+// Function to update card in local storage
 function updateCardInLocalStorage(
   id,
   newTitle,
@@ -82,12 +83,14 @@ function updateCardInLocalStorage(
   }
 }
 
+// Function to remove card from local storage
 function removeCardFromLocalStorage(id) {
   let cards = JSON.parse(localStorage.getItem("cards")) || [];
   cards = cards.filter((card) => card.id !== id);
   localStorage.setItem("cards", JSON.stringify(cards));
 }
 
+// Function to load cards from local storage
 function loadCardsFromLocalStorage() {
   const cards = JSON.parse(localStorage.getItem("cards")) || [];
   cards.forEach((card) => {
@@ -104,7 +107,9 @@ function loadCardsFromLocalStorage() {
   });
 }
 
+// Function to get card from local storage
 function getCardFromLocalStorage(id) {
   const cards = JSON.parse(localStorage.getItem("cards")) || [];
+  // this is returning the card with the matching id
   return cards.find((card) => card.id === id);
 }
