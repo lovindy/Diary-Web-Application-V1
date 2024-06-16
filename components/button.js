@@ -14,10 +14,12 @@ class CreateButtonComponent extends HTMLElement {
     let customClass = "";
     switch (type) {
       case "primary":
-        customClass = "bg-blue-500 hover:bg-blue-700 text-white";
+        customClass =
+          "bg-teal-400 border border-black hover:border-white hover:bg-teal-500 text-black hover:text-white duration-300";
         break;
       case "secondary":
-        customClass = "bg-gray-500 hover:bg-gray-700 text-white";
+        customClass =
+          "bg-black border border-white hover:border-black hover:bg-white text-white hover:text-black duration-300";
         break;
       case "danger":
         customClass = "bg-red-500 hover:bg-red-700 text-white";
