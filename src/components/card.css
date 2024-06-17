@@ -93,3 +93,10 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* card alignment with grid column with 3 and next card will go down*/
+#card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}

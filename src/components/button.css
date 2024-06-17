@@ -65,3 +65,9 @@
 .button-default:hover {
   background-color: #3182ce;
 }
+
+button {
+  cursor: pointer;
+  padding: 4px 16px;
+  border-radius: 8px;
+}
