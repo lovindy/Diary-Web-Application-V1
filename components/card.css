@@ -87,3 +87,9 @@ body {
 .form-textarea {
   height: 100px;
 }
+
+/* set the max-width of this container to 1440px */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
