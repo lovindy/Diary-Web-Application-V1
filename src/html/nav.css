@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
+  transition-duration: 0.3s;
 }
 
 .logo img {
@@ -31,6 +32,7 @@
 .nav-buttons {
   display: flex;
   gap: 16px;
+  transition-duration: 0.3s;
 }
 
 .underline-animation {
@@ -54,4 +56,34 @@
 .underline-animation:hover::before {
   visibility: visible;
   width: 100%;
+}
+.menu-icon {
+  display: none;
+}
+
+/* Display this menu-icon in the tablet screen */
+@media screen and (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Hide all the ul link and button in tablet screen */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: none;
+    transition-duration: 0.3s;
+  }
+  .nav-buttons {
+    display: none;
+    transition-duration: 0.3s;
+  }
+}
+
+/* custom padding on the navigation in tablet screen */
+@media screen and (max-width: 1024px) {
+  .nav-container {
+    padding: 0 32px;
+    transition-duration: 0.3s;
+  }
 }

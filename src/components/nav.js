@@ -26,6 +26,9 @@ function createNavHTML() {
         <button-component title="Login" type="primary"></button-component>
         <button-component title="Sign Up" type="secondary"></button-component>
       </div>
+      <div class="menu-icon">
+        <img src="../assets/icons/menu-icon.svg" alt="Diary Logo" />
+      </div>
     </nav>
   `;
   return navHTML;

@@ -3,7 +3,6 @@
   background-color: #34495e;
   border-radius: 8px;
   padding: 16px;
-  margin: 16px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: white;
 }
@@ -61,36 +60,53 @@
   display: none;
 }
 
-/* make this form container flex column */
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
-}
-
-.form-textarea {
-  height: 100px;
-}
-
-/* set the max-width of this container to 1440px */
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
+h1 {
+  transition-duration: 0.3s;
 }
 
 /* card alignment with grid column with 3 and next card will go down*/
-#card-grid {
+#cardsContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 100px;
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr); /* Adjusted to fit three columns */
+  grid-auto-rows: auto; /* Adjusts row height based on content */
+  grid-auto-columns: auto;
+  gap: 16px; /* Space between grid items */
+  margin: 16px 0;
+  padding: 16px 0;
+  transition-duration: 0.3s;
+  align-items: start;
+}
+
+/* Create Responsive for tablet screen on the grid card */
+@media screen and (max-width: 1024px) {
+  #cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    transition-duration: 0.3s;
+  }
+  .form-container {
+    padding: 16px;
+    transition-duration: 0.3s;
+  }
+  h1 {
+    padding: 16px;
+    transition-duration: 0.3s;
+  }
+}
+
+/* Create Responsive for mobile screen on the grid card */
+@media screen and (max-width: 768px) {
+  #cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 16px;
+    transition-duration: 0.3s;
+  }
+  .form-container {
+    padding: 16px;
+    transition-duration: 0.3s;
+  }
+  h1 {
+    padding: 16px;
+    transition-duration: 0.3s;
+  }
 }

@@ -2,6 +2,15 @@ body {
   background-image: url("src/assets/icons/BackgroundDiary.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
   color: white;
   font-family: Roboto, sans-serif;
+  margin: 0; /* Removes default margin */
+  min-height: 100vh; /* Ensures body takes up at least the full viewport height */
+}
+
+.container {
+  max-width: 1440px;
+  padding: 16px;
+  margin: 0 auto;
 }

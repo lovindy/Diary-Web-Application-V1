@@ -1,0 +1,20 @@
+/* make this form container flex column */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.form-input,
+.form-textarea {
+  width: 90%;
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+.form-textarea {
+  height: auto;
+}
