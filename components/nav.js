@@ -11,7 +11,7 @@ function createNavHTML() {
   let navHTML = `
       <nav class="flex max-w-[1440px] mx-auto justify-between items-center px-16">
         <!-- Logo -->
-        <div class="logo"><img src="../asset/Diary.svg" alt="" /></div>
+        <div class="logo"><img src="../assets/icons/Diary.svg" alt="" /></div>
   
         <!-- Link List to other pages -->
         <ul class="flex space-x-4 text-white">

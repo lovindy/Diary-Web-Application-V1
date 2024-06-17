@@ -11,7 +11,7 @@ function createNavHTML() {
   let navHTML = `
     <nav class="nav-container">
       <!-- Logo -->
-      <div class="logo"><img src="../asset/Diary.svg" alt="Diary Logo" /></div>
+      <div class="logo"><img src="../assets/icons/Diary.svg" alt="Diary Logo" /></div>
       <!-- Link List to other pages -->
       <ul class="nav-links">
   `;
