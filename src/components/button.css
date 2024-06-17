@@ -9,8 +9,9 @@
 
 /* Primary button */
 .button-primary {
-  background-color: #38b2ac;
+  background-color: #55f2c3;
   color: black;
+  border-color: white;
 }
 
 .button-primary:hover {
@@ -71,5 +72,3 @@ button {
   padding: 4px 16px;
   border-radius: 8px;
 }
-
-
