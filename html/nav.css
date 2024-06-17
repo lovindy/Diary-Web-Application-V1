@@ -1,25 +1,66 @@
+/* nav.css */
+body {
+  background-image: url("../asset/BackgroundDiary.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+
 .underline-animation {
   position: relative;
+  text-decoration: none;
+  color: white;
 }
-.underline-animation::after {
+
+.underline-animation::before {
   content: "";
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
+  width: 0;
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-.underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
-body {
-  background-image: url("../asset/BackgroundDiary.svg");
-  background-size: cover; /* Adjust to your preference */
-  background-repeat: no-repeat; /* Prevent repeating the image */
+.underline-animation:hover::before {
+  visibility: visible;
+  width: 100%;
 }

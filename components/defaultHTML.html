@@ -3,48 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dynamic Button</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <title>Diary App</title>
+    <link rel="stylesheet" href="../html/nav.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="button.css" />
   </head>
-  <body
-    class="bg-gray-100 min-h-screen flex flex-col items-center justify-center"
-  >
-    <div
-      id="app"
-      class="p-6 bg-white rounded-lg shadow-md mb-6 max-w-md w-full"
-    >
-      <input
-        type="text"
-        id="title"
-        placeholder="Title"
-        class="mb-3 p-3 border border-gray-300 rounded w-full focus:outline-none focus:border-blue-500"
-      />
-      <textarea
-        id="note"
-        placeholder="Note"
-        class="mb-3 p-3 border border-gray-300 rounded w-full h-32 resize-none focus:outline-none focus:border-blue-500"
-      ></textarea>
-      <input
-        type="text"
-        id="category"
-        placeholder="Category"
-        class="mb-3 p-3 border border-gray-300 rounded w-full focus:outline-none focus:border-blue-500"
-      />
-      <button
-        id="addCardBtn"
-        class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 focus:outline-none"
-      >
-        Add Card
-      </button>
+  <body>
+    <nav-component></nav-component>
+
+    <div class="container">
+      <h1>My Diary</h1>
+      <div class="form-container">
+        <input type="text" id="title" placeholder="Title" />
+        <textarea id="note" placeholder="Note"></textarea>
+        <input type="text" id="category" placeholder="Category" />
+        <button id="addCardBtn">Add Card</button>
+      </div>
+      <div id="cardsContainer"></div>
     </div>
-    <div
-      id="cardsContainer"
-      class="grid grid-cols-1 gap-4 max-w-4xl w-full"
-    ></div>
 
     <script src="defaultCard.js"></script>
+    <script src="../components/button.js"></script>
   </body>
 </html>

@@ -1,0 +1,68 @@
+/* Base button styles */
+.button {
+  padding: 8px 16px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 9999px; /* Rounded full */
+  transition: all 0.3s ease;
+}
+
+/* Primary button */
+.button-primary {
+  background-color: #38b2ac;
+  border: 1px solid black;
+  color: black;
+}
+.button-primary:hover {
+  border-color: white;
+  background-color: #319795;
+  color: white;
+}
+
+/* Secondary button */
+.button-secondary {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.button-secondary:hover {
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+/* Danger button */
+.button-danger {
+  background-color: #f56565;
+  color: white;
+}
+.button-danger:hover {
+  background-color: #e53e3e;
+}
+
+/* Success button */
+.button-success {
+  background-color: #48bb78;
+  color: white;
+}
+.button-success:hover {
+  background-color: #38a169;
+}
+
+/* Warning button */
+.button-warning {
+  background-color: #ecc94b;
+  color: white;
+}
+.button-warning:hover {
+  background-color: #d69e2e;
+}
+
+/* Default primary button */
+.button-default {
+  background-color: #4299e1;
+  color: white;
+}
+.button-default:hover {
+  background-color: #3182ce;
+}
