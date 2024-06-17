@@ -10,7 +10,6 @@
 /* Primary button */
 .button-primary {
   background-color: #38b2ac;
-  border: 1px solid black;
   color: black;
 }
 
@@ -23,7 +22,6 @@
 /* Secondary button */
 .button-secondary {
   background-color: black;
-  border: 1px solid white;
   color: white;
 }
 .button-secondary:hover {
