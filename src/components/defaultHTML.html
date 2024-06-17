@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diary App</title>
+    <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="../html/nav.css" />
     <link rel="stylesheet" href="card.css" />
     <link rel="stylesheet" href="button.css" />
   </head>
   <body>
+    <!-- Include the custom navigation component -->
     <nav-component></nav-component>
 
+    <!-- Define the main container -->
     <div class="container">
       <h1>My Diary</h1>
+      <!-- Define the form -->
       <div class="form-container">
         <input type="text" id="title" placeholder="Title" />
         <textarea id="note" placeholder="Note"></textarea>
         <input type="text" id="category" placeholder="Category" />
         <button id="addCardBtn">Add Card</button>
       </div>
+      <!-- Define the card grid -->
       <div id="card-grid"><div id="cardsContainer"></div></div>
     </div>
 

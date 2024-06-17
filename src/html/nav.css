@@ -1,12 +1,3 @@
-/* nav.css */
-body {
-  background-image: url("../assets/icons/BackgroundDiary.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  font-family: Roboto, sans-serif;
-}
-
 .nav-container {
   display: flex;
   max-width: 1440px;
